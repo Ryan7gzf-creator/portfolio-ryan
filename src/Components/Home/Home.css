@@ -1,0 +1,96 @@
+.text-one {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 1vh 1vh 1vh 2vh;
+    box-shadow: 1px 1px 3px #888888;
+}
+
+.titling {
+    text-align: center;
+}
+
+.explanation {
+    font-size: 15px;
+}
+
+.text {
+    text-align: center;
+}
+
+.techStack {
+    padding: 0 12px 0 12px;
+    font-size: 45px;
+}
+
+.images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.self-emoji {
+    width: 25vh;
+}
+
+.text-two {
+    padding-top: 3vh;
+}
+
+.text-zero {
+    border-radius: 25px;
+}
+
+.text-three {
+    padding-top: 3vh;
+}
+
+.proj-text {
+    color: #222831;
+}
+
+.projects {
+    background: none;
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 0 4px 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-bottom-color: #f2f2f2;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: 100%;
+    position: relative;
+}
+
+li {
+    position: relative;
+}
+button {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+button:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #00ADB5;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+button:hover:after {
+    width: 100%;
+    left: 0;
+}
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}

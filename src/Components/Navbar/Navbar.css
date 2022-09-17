@@ -1,0 +1,133 @@
+.title {
+    font-size: 40px;
+    color: #222831;
+}
+
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222831;
+}
+
+.nav {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5vh;
+    max-width: 730px;
+    margin: 0 auto;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.nav-toggle div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #222831;
+    transition: 0.3s ease-in;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.nav a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    .nav-menu {
+        position: fixed;
+        top: 9vh;
+        right: 0;
+        width: 30%;
+        height: 50vh;
+        background: #EEEEEE;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.3s ease-in;
+        border-radius: 11px;
+        z-index: 20;
+        opacity: 0.9;
+    }
+    .nav-link {
+        font-size: 18px;
+        margin-right: 50px;
+    }
+}
+
+/* Nav Active Class */
+.nav-active {
+    transform: translateX(0);
+}
+
+/* Toggle Icon Animation */
+.toggle .first{
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .second{
+    opacity: 0;
+}
+.toggle .third{
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+
+.nav a {
+    color: #222831;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    transition: transform .5s;
+}
+.nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #00ADB5;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav a:hover:after {
+    width: 100%;
+    left: 0;
+}
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
